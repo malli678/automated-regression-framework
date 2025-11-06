@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: test-runner-worker
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+logging:
+  level:
+    com.regression.framework: INFO
+  file:
+    name: logs/worker.log
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"

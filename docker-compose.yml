@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: regression-rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+    healthcheck:
+      test: ["CMD", "rabbitmqctl", "status"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  test-management-api:
+    build:
+      context: ./test-management-api
+      dockerfile: Dockerfile
+    container_name: test-management-api
+    ports:
+      - "8080:8080"
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    environment:
+      - SPRING_RABBITMQ_HOST=rabbitmq
+      - SPRING_RABBITMQ_PORT=5672
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+
+  test-runner-worker:
+    build:
+      context: ./test-runner-worker
+      dockerfile: Dockerfile
+    container_name: test-runner-worker
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    environment:
+      - SPRING_RABBITMQ_HOST=rabbitmq
+      - SPRING_RABBITMQ_PORT=5672
+    volumes:
+      - ./reports:/app/reports
+      - ./logs:/app/logs
+
+volumes:
+  reports:
+  logs:
+  data:

@@ -1,0 +1,81 @@
+2025-11-06T14:21:36.929+05:30  INFO 11752 --- [test-runner-worker] [main] c.r.f.w.TestRunnerWorkerApplication      : Starting TestRunnerWorkerApplication using Java 20.0.2 with PID 11752 (C:\Users\manda\IdeaProjects\automated-regression-framework\test-runner-worker\target\classes started by manda in C:\Users\manda\IdeaProjects\automated-regression-framework\test-runner-worker)
+2025-11-06T14:21:36.941+05:30  INFO 11752 --- [test-runner-worker] [main] c.r.f.w.TestRunnerWorkerApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-11-06T14:21:38.898+05:30  INFO 11752 --- [test-runner-worker] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-11-06T14:21:38.992+05:30  INFO 11752 --- [test-runner-worker] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#68a4dcc6:0/SimpleConnection@4116f66a [delegate=amqp://guest@127.0.0.1:5672/, localPort=59050]
+2025-11-06T14:21:39.070+05:30  INFO 11752 --- [test-runner-worker] [main] c.r.f.w.TestRunnerWorkerApplication      : Started TestRunnerWorkerApplication in 2.802 seconds (process running for 3.422)
+2025-11-06T14:22:17.466+05:30  INFO 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.worker.listener.WorkerListener     : Received test execution job: JOB_1762419137346_RUN_1762419137215
+2025-11-06T14:22:17.468+05:30  INFO 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.worker.service.TestExecutor        : Starting test execution for run: RUN_1762419137215
+2025-11-06T14:22:17.470+05:30  INFO 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.worker.service.TestExecutor        : Executing web tests for job: JOB_1762419137346_RUN_1762419137215
+2025-11-06T14:22:21.436+05:30  WARN 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.o.selenium.devtools.CdpVersionFinder   : Unable to find CDP implementation matching 142
+2025-11-06T14:22:21.437+05:30  WARN 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.o.selenium.chromium.ChromiumDriver     : Unable to find version of CDP to use for 142.0.7444.60. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.14.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-11-06T14:22:23.100+05:30  INFO 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.worker.service.TestExecutor        : Page title: Google
+2025-11-06T14:22:23.100+05:30  INFO 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.worker.service.TestExecutor        : DEBUG - Lowercase title: google
+2025-11-06T14:22:23.102+05:30  INFO 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.worker.service.TestExecutor        : DEBUG - Contains 'google': true
+2025-11-06T14:22:23.104+05:30  INFO 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.worker.service.TestExecutor        : DEBUG - Google test PASSED
+2025-11-06T14:22:29.003+05:30  INFO 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.worker.service.TestExecutor        : Page title: GitHub · Change is constant. GitHub keeps you ahead. · GitHub
+2025-11-06T14:22:29.006+05:30  INFO 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.worker.service.TestExecutor        : DEBUG - Lowercase title: github · change is constant. github keeps you ahead. · github
+2025-11-06T14:22:29.006+05:30  INFO 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.worker.service.TestExecutor        : DEBUG - Contains 'github': true
+2025-11-06T14:22:29.006+05:30  INFO 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.worker.service.TestExecutor        : DEBUG - GitHub test PASSED
+2025-11-06T14:22:30.477+05:30  INFO 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.worker.service.TestExecutor        : Test execution completed for run: RUN_1762419137215. Total tests: 2
+2025-11-06T14:22:30.488+05:30  INFO 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.worker.service.ReportGenerator     : Generated HTML report: reports\test_report_RUN_1762419137215_20251106_142230.html
+2025-11-06T14:22:30.490+05:30  INFO 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.worker.service.ReportGenerator     : Generated CSV report: reports\test_report_RUN_1762419137215_20251106_142230.csv
+2025-11-06T14:22:30.495+05:30  INFO 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.worker.service.ReportGenerator     : Generated JUnit report: reports\TEST-RUN_1762419137215-20251106_142230.xml
+2025-11-06T14:22:30.557+05:30  INFO 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.worker.service.TestExecutor        : Sent test results for job: JOB_1762419137346_RUN_1762419137215
+2025-11-06T14:22:30.559+05:30  INFO 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.worker.listener.WorkerListener     : Successfully executed job: JOB_1762419137346_RUN_1762419137215
+2025-11-06T14:27:33.539+05:30  INFO 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@252744a1: tags=[[amq.ctag-jkKIzkOkHIiuiKYMLSn5sg]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@414f87a9 Shared Rabbit Connection: SimpleConnection@4116f66a [delegate=amqp://guest@127.0.0.1:5672/, localPort=59050], acknowledgeMode=AUTO local queue size=0
+2025-11-06T14:27:33.544+05:30  INFO 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-11-06T14:27:33.587+05:30 ERROR 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+
+org.springframework.amqp.AmqpIOException: java.io.IOException
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:70) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:594) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:711) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareChannel(CachingConnectionFactory.java:662) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getCachedChannelProxy(CachingConnectionFactory.java:636) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getChannel(CachingConnectionFactory.java:526) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$ChannelCachingConnectionProxy.createChannel(CachingConnectionFactory.java:1423) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2231) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2198) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2178) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:465) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:449) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1936) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1904) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1383) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1225) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+Caused by: java.io.IOException: null
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:140) ~[amqp-client-5.19.0.jar:5.19.0]
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:136) ~[amqp-client-5.19.0.jar:5.19.0]
+	at com.rabbitmq.client.impl.AMQConnection.start(AMQConnection.java:406) ~[amqp-client-5.19.0.jar:5.19.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1251) ~[amqp-client-5.19.0.jar:5.19.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1198) ~[amqp-client-5.19.0.jar:5.19.0]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:632) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:607) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:557) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	... 15 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: connection error
+	at com.rabbitmq.utility.ValueOrException.getValue(ValueOrException.java:66) ~[amqp-client-5.19.0.jar:5.19.0]
+	at com.rabbitmq.utility.BlockingValueOrException.uninterruptibleGetValue(BlockingValueOrException.java:36) ~[amqp-client-5.19.0.jar:5.19.0]
+	at com.rabbitmq.client.impl.AMQChannel$BlockingRpcContinuation.getReply(AMQChannel.java:552) ~[amqp-client-5.19.0.jar:5.19.0]
+	at com.rabbitmq.client.impl.AMQConnection.start(AMQConnection.java:336) ~[amqp-client-5.19.0.jar:5.19.0]
+	... 20 common frames omitted
+Caused by: java.io.EOFException: null
+	at java.base/java.io.DataInputStream.readUnsignedByte(DataInputStream.java:290) ~[na:na]
+	at com.rabbitmq.client.impl.Frame.readFrom(Frame.java:91) ~[amqp-client-5.19.0.jar:5.19.0]
+	at com.rabbitmq.client.impl.SocketFrameHandler.readFrame(SocketFrameHandler.java:199) ~[amqp-client-5.19.0.jar:5.19.0]
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:687) ~[amqp-client-5.19.0.jar:5.19.0]
+	... 1 common frames omitted
+
+2025-11-06T14:27:33.603+05:30  INFO 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-11-06T14:27:38.713+05:30  INFO 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@1e8060ea: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2025-11-06T14:27:38.715+05:30  INFO 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-11-06T14:27:38.718+05:30 ERROR 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+2025-11-06T14:27:38.719+05:30  INFO 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-11-06T14:27:43.823+05:30  WARN 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2025-11-06T14:27:43.824+05:30  INFO 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6c1428db: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2025-11-06T14:27:43.826+05:30  INFO 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-11-06T14:27:43.828+05:30 ERROR 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+2025-11-06T14:27:43.828+05:30  INFO 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-11-06T14:27:48.601+05:30  INFO 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-5] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-11-06T14:27:48.602+05:30  INFO 11752 --- [test-runner-worker] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-5] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.

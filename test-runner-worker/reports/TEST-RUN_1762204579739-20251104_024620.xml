@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?>\n<testsuite name="APITest" tests="2" failures="0" time="0">\n  <testcase name="JSONPlaceholderAPI Test" time="0.503">\n  </testcase>\n  <testcase name="PublicAPI Test" time="0.311">\n  </testcase>\n</testsuite>\n

@@ -1,0 +1,120 @@
+2025-11-06T14:20:58.225+05:30  INFO 23160 --- [test-management-api] [main] c.r.f.api.TestManagementApiApplication   : Starting TestManagementApiApplication using Java 20.0.2 with PID 23160 (C:\Users\manda\IdeaProjects\automated-regression-framework\test-management-api\target\classes started by manda in C:\Users\manda\IdeaProjects\automated-regression-framework\test-management-api)
+2025-11-06T14:20:58.237+05:30  INFO 23160 --- [test-management-api] [main] c.r.f.api.TestManagementApiApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-11-06T14:20:59.734+05:30  INFO 23160 --- [test-management-api] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-06T14:20:59.830+05:30  INFO 23160 --- [test-management-api] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 1 JPA repository interface.
+2025-11-06T14:21:00.798+05:30  INFO 23160 --- [test-management-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-06T14:21:00.822+05:30  INFO 23160 --- [test-management-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-06T14:21:00.825+05:30  INFO 23160 --- [test-management-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-06T14:21:00.940+05:30  INFO 23160 --- [test-management-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-06T14:21:00.940+05:30  INFO 23160 --- [test-management-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2594 ms
+2025-11-06T14:21:00.994+05:30  INFO 23160 --- [test-management-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-06T14:21:01.405+05:30  INFO 23160 --- [test-management-api] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/testruns user=SA
+2025-11-06T14:21:01.408+05:30  INFO 23160 --- [test-management-api] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-06T14:21:01.458+05:30  INFO 23160 --- [test-management-api] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/testruns'
+2025-11-06T14:21:01.692+05:30  INFO 23160 --- [test-management-api] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-06T14:21:01.825+05:30  INFO 23160 --- [test-management-api] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-11-06T14:21:01.896+05:30  INFO 23160 --- [test-management-api] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-06T14:21:02.241+05:30  INFO 23160 --- [test-management-api] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-06T14:21:02.352+05:30  WARN 23160 --- [test-management-api] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-06T14:21:03.453+05:30  INFO 23160 --- [test-management-api] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-06T14:21:03.538+05:30  INFO 23160 --- [test-management-api] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-06T14:21:04.370+05:30  WARN 23160 --- [test-management-api] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-06T14:21:04.835+05:30  INFO 23160 --- [test-management-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-11-06T14:21:04.840+05:30  INFO 23160 --- [test-management-api] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-11-06T14:21:04.944+05:30  INFO 23160 --- [test-management-api] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#29a50a11:0/SimpleConnection@40ef385f [delegate=amqp://guest@127.0.0.1:5672/, localPort=59048]
+2025-11-06T14:21:05.013+05:30  INFO 23160 --- [test-management-api] [main] c.r.f.api.TestManagementApiApplication   : Started TestManagementApiApplication in 7.508 seconds (process running for 8.226)
+2025-11-06T14:22:17.062+05:30  INFO 23160 --- [test-management-api] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-06T14:22:17.063+05:30  INFO 23160 --- [test-management-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-06T14:22:17.064+05:30  INFO 23160 --- [test-management-api] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-06T14:22:30.588+05:30  INFO 23160 --- [test-management-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.api.listener.TestResultsListener   : Received test results for run: RUN_1762419137215
+2025-11-06T14:22:30.591+05:30  INFO 23160 --- [test-management-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.api.listener.TestResultsListener   : DEBUG - Total tests: 2
+2025-11-06T14:22:30.595+05:30  INFO 23160 --- [test-management-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.api.listener.TestResultsListener   : DEBUG - Failed tests: 0
+2025-11-06T14:22:30.595+05:30  INFO 23160 --- [test-management-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.api.listener.TestResultsListener   : DEBUG - Screenshot paths collected: 
+2025-11-06T14:22:30.596+05:30  INFO 23160 --- [test-management-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.api.listener.TestResultsListener   : DEBUG - Failure details collected: 
+2025-11-06T14:22:30.596+05:30  INFO 23160 --- [test-management-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.api.listener.TestResultsListener   : DEBUG - Calling TestRunService.updateTestRunStatus
+2025-11-06T14:22:30.596+05:30  INFO 23160 --- [test-management-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.api.listener.TestResultsListener   : DEBUG - Run ID: RUN_1762419137215
+2025-11-06T14:22:30.598+05:30  INFO 23160 --- [test-management-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.api.listener.TestResultsListener   : DEBUG - Screenshot paths to save: 
+2025-11-06T14:22:30.598+05:30  INFO 23160 --- [test-management-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.api.service.TestRunService         : DEBUG TestRunService - Updating run: RUN_1762419137215
+2025-11-06T14:22:30.599+05:30  INFO 23160 --- [test-management-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.api.service.TestRunService         : DEBUG TestRunService - Screenshot paths received: 
+2025-11-06T14:22:30.599+05:30  INFO 23160 --- [test-management-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.api.service.TestRunService         : DEBUG TestRunService - Failure details received: 
+2025-11-06T14:22:30.636+05:30  INFO 23160 --- [test-management-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.api.service.TestRunService         : DEBUG TestRunService - Before save - ScreenshotPaths: 
+2025-11-06T14:22:30.637+05:30  INFO 23160 --- [test-management-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.api.service.TestRunService         : DEBUG TestRunService - Before save - FailureDetails: 
+2025-11-06T14:22:30.680+05:30  INFO 23160 --- [test-management-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.api.service.TestRunService         : DEBUG TestRunService - After save - Successfully updated database
+2025-11-06T14:22:30.680+05:30  INFO 23160 --- [test-management-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.api.listener.TestResultsListener   : DEBUG - After calling TestRunService.updateTestRunStatus
+2025-11-06T14:22:30.681+05:30  INFO 23160 --- [test-management-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.r.f.api.listener.TestResultsListener   : Updated test run status for: RUN_1762419137215
+2025-11-06T14:27:32.945+05:30  INFO 23160 --- [test-management-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@72321701: tags=[[amq.ctag-36yCXAQj_IXapWs16ibWqg]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@425376cc Shared Rabbit Connection: SimpleConnection@40ef385f [delegate=amqp://guest@127.0.0.1:5672/, localPort=59048], acknowledgeMode=AUTO local queue size=0
+2025-11-06T14:27:32.950+05:30  INFO 23160 --- [test-management-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-11-06T14:27:32.973+05:30 ERROR 23160 --- [test-management-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+
+org.springframework.amqp.AmqpIOException: java.io.IOException
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:70) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:594) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:711) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareChannel(CachingConnectionFactory.java:662) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getCachedChannelProxy(CachingConnectionFactory.java:636) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getChannel(CachingConnectionFactory.java:526) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$ChannelCachingConnectionProxy.createChannel(CachingConnectionFactory.java:1423) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2231) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2198) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2178) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:465) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:449) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1936) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1904) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1383) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1225) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+Caused by: java.io.IOException: null
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:140) ~[amqp-client-5.19.0.jar:5.19.0]
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:136) ~[amqp-client-5.19.0.jar:5.19.0]
+	at com.rabbitmq.client.impl.AMQConnection.start(AMQConnection.java:406) ~[amqp-client-5.19.0.jar:5.19.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1251) ~[amqp-client-5.19.0.jar:5.19.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1198) ~[amqp-client-5.19.0.jar:5.19.0]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:632) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:607) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:557) ~[spring-rabbit-3.1.0.jar:3.1.0]
+	... 15 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: connection error
+	at com.rabbitmq.utility.ValueOrException.getValue(ValueOrException.java:66) ~[amqp-client-5.19.0.jar:5.19.0]
+	at com.rabbitmq.utility.BlockingValueOrException.uninterruptibleGetValue(BlockingValueOrException.java:36) ~[amqp-client-5.19.0.jar:5.19.0]
+	at com.rabbitmq.client.impl.AMQChannel$BlockingRpcContinuation.getReply(AMQChannel.java:552) ~[amqp-client-5.19.0.jar:5.19.0]
+	at com.rabbitmq.client.impl.AMQConnection.start(AMQConnection.java:336) ~[amqp-client-5.19.0.jar:5.19.0]
+	... 20 common frames omitted
+Caused by: java.io.EOFException: null
+	at java.base/java.io.DataInputStream.readUnsignedByte(DataInputStream.java:290) ~[na:na]
+	at com.rabbitmq.client.impl.Frame.readFrom(Frame.java:91) ~[amqp-client-5.19.0.jar:5.19.0]
+	at com.rabbitmq.client.impl.SocketFrameHandler.readFrame(SocketFrameHandler.java:199) ~[amqp-client-5.19.0.jar:5.19.0]
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:687) ~[amqp-client-5.19.0.jar:5.19.0]
+	... 1 common frames omitted
+
+2025-11-06T14:27:32.994+05:30  INFO 23160 --- [test-management-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-11-06T14:27:33.011+05:30 ERROR 23160 --- [test-management-api] [AMQP Connection 0:0:0:0:0:0:0:1:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occurred
+
+java.net.SocketException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:320) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:345) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:794) ~[na:na]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1025) ~[na:na]
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:258) ~[na:na]
+	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:292) ~[na:na]
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:279) ~[na:na]
+	at java.base/java.io.DataInputStream.readUnsignedByte(DataInputStream.java:288) ~[na:na]
+	at com.rabbitmq.client.impl.Frame.readFrom(Frame.java:91) ~[amqp-client-5.19.0.jar:5.19.0]
+	at com.rabbitmq.client.impl.SocketFrameHandler.readFrame(SocketFrameHandler.java:199) ~[amqp-client-5.19.0.jar:5.19.0]
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:687) ~[amqp-client-5.19.0.jar:5.19.0]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2025-11-06T14:27:38.122+05:30  INFO 23160 --- [test-management-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@5f5b8f39: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2025-11-06T14:27:38.125+05:30  INFO 23160 --- [test-management-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-11-06T14:27:38.129+05:30 ERROR 23160 --- [test-management-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+2025-11-06T14:27:38.130+05:30  INFO 23160 --- [test-management-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-11-06T14:27:43.230+05:30  WARN 23160 --- [test-management-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2025-11-06T14:27:43.233+05:30  INFO 23160 --- [test-management-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@7a4930f0: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2025-11-06T14:27:43.234+05:30  INFO 23160 --- [test-management-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-11-06T14:27:43.237+05:30 ERROR 23160 --- [test-management-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+2025-11-06T14:27:43.238+05:30  INFO 23160 --- [test-management-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-11-06T14:27:44.161+05:30  INFO 23160 --- [test-management-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-5] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-11-06T14:27:44.162+05:30  INFO 23160 --- [test-management-api] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-5] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-11-06T14:27:44.193+05:30  INFO 23160 --- [test-management-api] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-06T14:27:44.196+05:30  INFO 23160 --- [test-management-api] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-06T14:27:44.199+05:30  INFO 23160 --- [test-management-api] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

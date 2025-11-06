@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?>\n<testsuite name="FailureTest" tests="2" failures="0" time="0">\n  <testcase name="GooglePageTest" time="1.807">\n  </testcase>\n  <testcase name="GitHubPageTest" time="2.716">\n  </testcase>\n</testsuite>\n

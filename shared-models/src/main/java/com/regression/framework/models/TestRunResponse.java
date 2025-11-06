@@ -1,7 +1,7 @@
 package com.regression.framework.models;
 
 import java.time.LocalDateTime;
-
+@SuppressWarnings("unused")
 public class TestRunResponse {
     private String runId;
     private String status;

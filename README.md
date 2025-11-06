@@ -27,7 +27,7 @@ A complete automated regression testing system that schedules, executes, and rep
 
 ---
 
-## Project Overview 📋
+## Project Overview
 
 ### What We Built
 

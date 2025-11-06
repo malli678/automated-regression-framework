@@ -47,7 +47,7 @@ A distributed **automated test execution system** capable of:
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ### Three-Tier Microservices Design
 
@@ -66,7 +66,7 @@ A distributed **automated test execution system** capable of:
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
 * REST API for test scheduling and management
 * Message-driven job distribution with RabbitMQ
@@ -79,7 +79,7 @@ A distributed **automated test execution system** capable of:
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 | Component             | Technology         | Purpose                         |
 | --------------------- | ------------------ | ------------------------------- |
@@ -95,7 +95,7 @@ A distributed **automated test execution system** capable of:
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 automated-regression-framework/
@@ -171,7 +171,7 @@ automated-regression-framework/
 
 ---
 
-## ⚙️ Setup & Installation
+## Setup & Installation
 
 ### 1️⃣ Prerequisites
 
@@ -207,7 +207,7 @@ mvn clean install -DskipTests
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 ### API (`test-management-api/src/main/resources/application.yml`)
 
@@ -238,7 +238,7 @@ spring:
 
 ---
 
-## ▶️ Running the Project
+## Running the Project
 
 ### Start the API Service
 
@@ -258,7 +258,7 @@ mvn spring-boot:run
 
 ---
 
-## 📡 API Endpoints
+## API Endpoints
 
 | Method   | Endpoint              | Description             |
 | -------- | --------------------- | ----------------------- |
@@ -296,7 +296,7 @@ curl -X POST http://localhost:8080/api/runs \
 
 ---
 
-## 🔄 Complete Execution Flow
+## Complete Execution Flow
 
 1. User sends POST `/api/runs`
 2. API stores test run in database (`SCHEDULED`)
@@ -309,7 +309,7 @@ curl -X POST http://localhost:8080/api/runs \
 
 ---
 
-## 📊 Reporting System
+## Reporting System
 
 | Format        | Description                       | Location         |
 | ------------- | --------------------------------- | ---------------- |
@@ -326,7 +326,7 @@ All reports include:
 
 ---
 
-## 🧭 Monitoring & Debugging
+## Monitoring & Debugging
 
 ### 🔍 Logs
 
@@ -346,7 +346,7 @@ All reports include:
 
 ---
 
-## 💼 Use Cases & Applications
+## Use Cases & Applications
 
 | Use Case                      | Description                               |
 | ----------------------------- | ----------------------------------------- |
@@ -367,7 +367,7 @@ All reports include:
 
 ---
 
-## 🚀 Future Enhancements
+## Future Enhancements
 
 | Timeline       | Planned Features                                            |
 | -------------- | ----------------------------------------------------------- |
@@ -377,7 +377,7 @@ All reports include:
 
 ---
 
-## 👥 Contributors
+## Contributors
 
 | Name                 | Role                          |
 | ---------------------|------------------------------ |

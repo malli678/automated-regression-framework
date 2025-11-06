@@ -8,7 +8,7 @@ A complete automated regression testing system that schedules, executes, and rep
 
 ## 📋 Table of Contents
 
-* [Overview](#project-overview)
+* [Project Overview](#project-overview)
 * [Architecture](#system-architecture)
 * [Key Features](#key-features)
 * [Tech Stack](#technology-stack)
